@@ -63,12 +63,12 @@ DATABASE_URI = environ.get('DATABASE_URI', "mongodb+srv://ROUT1:ROUT1@cluster0.v
 DATABASE_NAME = environ.get('DATABASE_NAME', "TELEGRAM")
 COLLECTION_NAME = environ.get('COLLECTION_NAME', 'FILES')
 
-MULTIPLE_DATABASE = bool(environ.get('MULTIPLE_DATABASE', False)) # Set True or False
+MULTIPLE_DATABASE = bool(environ.get('MULTIPLE_DATABASE', True) # Set True or False
 
 # If Multiple Database Is True Then Fill All Three Below Database Uri Else You Will Get Error.
-O_DB_URI = environ.get('O_DB_URI', "mongodb+srv://ROUT1:ROUT1@cluster0.va2aygw.mongodb.net/?retryWrites=true&w=majority&appName=Cluster0")   # This Db Is For Other Data Store
-F_DB_URI = environ.get('F_DB_URI', "TELEGRAM")   # This Db Is For File Data Store
-S_DB_URI = environ.get('S_DB_URI', "FILES")   # This Db is for File Data Store When First Db Is Going To Be Full.
+O_DB_URI = environ.get('O_DB_URI', "mongodb+srv://ROUT:ROUT@cluster0.zym7ovn.mongodb.net/?retryWrites=true&w=majority&appName=Cluster0")   # This Db Is For Other Data Store
+F_DB_URI = environ.get('F_DB_URI', "mongodb+srv://ROUT2:ROUT2@cluster0.ddhtgbk.mongodb.net/?retryWrites=true&w=majority&appName=Cluster0")   # This Db Is For File Data Store
+S_DB_URI = environ.get('S_DB_URI', "mongodb+srv://ROUT3:ROUT3@cluster0.zs5k2zd.mongodb.net/?retryWrites=true&w=majority&appName=Cluster0")   # This Db is for File Data Store When First Db Is Going To Be Full.
 
 
 # Premium And Referal Settings
