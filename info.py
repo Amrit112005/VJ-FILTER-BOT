@@ -63,10 +63,10 @@ DATABASE_URI = environ.get('DATABASE_URI', "mongodb+srv://Rout:ROUT@cluster0.y7s
 DATABASE_NAME = environ.get('DATABASE_NAME', "TELEGRAM_BOT_INFO")
 COLLECTION_NAME = environ.get('COLLECTION_NAME', 'Telegram_files')
 
-MULTIPLE_DATABASE = bool(environ.get('MULTIPLE_DATABASE', True)) # Set True or False
+MULTIPLE_DATABASE = bool(environ.get('MULTIPLE_DATABASE', False)) # Set True or False
 
 # If Multiple Database Is True Then Fill All Three Below Database Uri Else You Will Get Error.
-O_DB_URI = environ.get('O_DB_URI', "mongodb+srv://Rout:Rout@cluster0.y7syq.mongodb.net/?retryWrites=true&w=majority")   # This Db Is For Other Data Store
+O_DB_URI = environ.get('O_DB_URI', "mongodb+srv://ROUT1:ROUT1@cluster0.va2aygw.mongodb.net/?retryWrites=true&w=majority&appName=Cluster0")   # This Db Is For Other Data Store
 F_DB_URI = environ.get('F_DB_URI', "TELEGRAM")   # This Db Is For File Data Store
 S_DB_URI = environ.get('S_DB_URI', "FILES")   # This Db is for File Data Store When First Db Is Going To Be Full.
 
