@@ -250,7 +250,6 @@ Nᴀᴍᴇ - {}"""
 𝗠𝗲𝘀𝘀𝗮𝗴𝗲 <b>: {}</b>"""
 
     CAPTION = """<a href='https://t.me/rudraraut'><b>ɴᴀᴍᴇ : {file_name}</b></a>"""
-    Powerd by: @rudraraut
 
     IMDB_TEMPLATE_TXT = """
 <b>Query: {qurey}
